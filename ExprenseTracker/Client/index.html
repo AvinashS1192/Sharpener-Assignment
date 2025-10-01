@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExpeseTracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div>
+      <div id="formboard" class="boards">
+        <div>
+          <h3 class="heading">ExpeseTracker</h3>
+        </div>
+        <form id="form" onsubmit="formHandler(event)">
+          <label for="name">Expense Name:</label>
+          <input type="text" id="name" placeholder="Expense Name" />
+          <br />
+          <label for="amount">Expense Amount:</label>
+          <input type="number" id="amount" placeholder="Amount" />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div id="board" class="boards"></div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </body>
+</html>
